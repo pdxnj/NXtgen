@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NextGen Home Services</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">NextGen Home Services</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Modern, Reliable Home Services</h1>
+        <p>From smart installs to full maintenance — quality workmanship with next-generation efficiency.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#contact">Get a Free Quote</a>
+          <a class="btn ghost" href="#services">See Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container section">
+      <h2 class="section-title">Our Services</h2>
+      <p class="lede">Complete home services delivered by vetted professionals.</p>
+      <div class="services-grid">
+        <div class="card" style="background-image:url('assets/IMG_2073.jpg');">
+          <div class="card-overlay">
+            <h3>Christmas Light Installation</h3>
+            <p>Seasonal lighting installs, safe wiring, timer setup, and takedown when the season ends.</p>
+          </div>
+        </div>
+        <div class="card" style="background-image:url('assets/IMG_8001.png');">
+          <div class="card-overlay">
+            <h3>Junk Removal</h3>
+            <p>Fast and reliable junk hauling, debris removal, and cleanout services for your home or business.</p>
+          </div>
+        </div>
+        <div class="card" style="background-image:url('assets/IMG_2076.JPG');">
+          <div class="card-overlay">
+            <h3>Window Washing</h3>
+            <p>Residential and commercial window cleaning with a streak-free guarantee.</p>
+          </div>
+        </div>
+        <div class="card" style="background-image:url('assets/IMG_2079.png');">
+          <div class="card-overlay">
+            <h3>Roof Cleaning</h3>
+            <p>Moss removal, soft wash roof cleaning, and gutter clearing to protect your shingles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section about">
+      <div class="about-grid">
+        <div>
+          <h2>About NextGen</h2>
+          <p>My name is Elliot, and I'm a 19-year-old recent graduate expanding my home services business. Over the past few years, my friends and I have been going door-to-door offering reliable help with window cleaning, lawn care, and seasonal services — including holiday light installation, Christmas tree setup and takedown, and junk removal. Through our work, we've seen firsthand how much of a difference dependable local help can make. What started as a small neighborhood effort has grown into something that benefits both our team and our community. Our goal is to keep building our business while continuing to provide honest, quality service to the people who make our community great.</p>
+          <p>Thank you for your support — we look forward to helping you with your next project!</p>
+        </div>
+        <div class="about-image"><img src="assets/logo.png" alt="NextGen Home Services Logo" style="width:100%;height:100%;object-fit:contain"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="container section contact">
+      <h2>Contact Us</h2>
+      <p class="lede">Request a free quote or ask a question — we typically respond within one business day.</p>
+
+      <div class="contact-details" style="margin-bottom:18px">
+        <p><strong>Email:</strong> <a href="mailto:nextgenhomeservices@gmail.com">nextgenhomeservices@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+15038332245">(503) 833-2245</a></p>
+      </div>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn primary">Send Message</button>
+        </div>
+      </form>
+    </section>
+    
+    <!-- Reviews panel (hidden by default, toggled by Reviews button) -->
+    <aside class="reviews-panel" aria-hidden="true" id="reviewsPanel">
+      <div class="panel-header">
+        <div>
+          <div class="rating"> <span id="ratingValue" style="font-size:1.25rem;">4.7</span> <span style="color:#f59e0b">★</span></div>
+          <div id="ratingCount" style="color:var(--muted);font-size:0.9rem">Based on 10 reviews</div>
+        </div>
+        <button class="reviews-close" aria-label="Close reviews" style="background:none;border:0;font-size:1.2rem;cursor:pointer">✕</button>
+      </div>
+
+      <!-- Leave a review form -->
+      <form id="reviewForm" class="review-form" novalidate>
+        <div class="form-row">
+          <label for="reviewerName">Name</label>
+          <input id="reviewerName" name="reviewerName" type="text" required placeholder="Your name">
+        </div>
+        <div class="form-row">
+          <label for="reviewRating">Rating</label>
+          <select id="reviewRating" name="reviewRating" required>
+            <option value="5">5 — Excellent</option>
+            <option value="4">4 — Very good</option>
+            <option value="3">3 — Good</option>
+            <option value="2">2 — Fair</option>
+            <option value="1">1 — Poor</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="reviewText">Review</label>
+          <textarea id="reviewText" name="reviewText" rows="3" required placeholder="Write a brief review"></textarea>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn primary">Submit Review</button>
+        </div>
+      </form>
+
+      <hr style="border:none;border-top:1px solid #eef6f2;margin:12px 0">
+
+      <ul class="reviews-list" id="reviewsList">
+        <li>
+          <div class="review-meta">John D. — 5.0 ★</div>
+          <p class="review-text">Fast, professional, and the lights looked amazing. Highly recommend!</p>
+        </li>
+        <li>
+          <div class="review-meta">Maria S. — 4.5 ★</div>
+          <p class="review-text">Great job on the roof cleaning. Friendly team and quick work.</p>
+        </li>
+        <li>
+          <div class="review-meta">Alex P. — 5.0 ★</div>
+          <p class="review-text">Moving day went smoothly — careful and reliable movers.</p>
+        </li>
+        <li>
+          <div class="review-meta">Priya K. — 4.0 ★</div>
+          <p class="review-text">Window washing was good, a few streaks but overall happy.</p>
+        </li>
+        <li>
+          <div class="review-meta">Sam R. — 5.0 ★</div>
+          <p class="review-text">Excellent communication and on-time — will use again.</p>
+        </li>
+        <li>
+          <div class="review-meta">Tessa W. — 4.5 ★</div>
+          <p class="review-text">Very happy with the Christmas lights installation.</p>
+        </li>
+        <li>
+          <div class="review-meta">Marcus L. — 5.0 ★</div>
+          <p class="review-text">Professional and careful with our furniture during our move.</p>
+        </li>
+        <li>
+          <div class="review-meta">Amanda G. — 4.5 ★</div>
+          <p class="review-text">Roof cleaning removed moss and made a big difference.</p>
+        </li>
+        <li>
+          <div class="review-meta">Noah Z. — 4.0 ★</div>
+          <p class="review-text">Reasonable price and friendly staff.</p>
+        </li>
+        <li>
+          <div class="review-meta">Liu H. — 5.0 ★</div>
+          <p class="review-text">Top-notch work — highly recommended for holiday lighting.</p>
+        </li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>&copy; 2025 NextGen Home Services — All rights reserved.</p>
+        <p><small>Designed for demo purposes. Replace content and images to match your brand.</small></p>
+      </div>
+      <div>
+        <p><strong>Email:</strong> <a href="mailto:nextgenhomeservices@gmail.com">nextgenhomeservices@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+15038332245">(503) 833-2245</a></p>
+      </div>
+      <div>
+        <p><strong>Follow Us:</strong> <a href="https://www.facebook.com/people/Next-gen-home-services/61583444024775/?sk=about" target="_blank" rel="noopener noreferrer">Facebook</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Discount popup modal -->
+  <div id="discountModal" class="discount-modal" aria-hidden="true" aria-labelledby="discountTitle">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close" onclick="document.getElementById('discountModal').classList.remove('active')">✕</button>
+      <div class="modal-header">
+        <h2 id="discountTitle">Exclusive Offer!</h2>
+        <p class="discount-badge">5% OFF</p>
+        <p class="offer-text">Your First Service</p>
+      </div>
+      <p class="modal-description">Join our community and get 5% off your first service. Just tell us a bit about yourself.</p>
+      <form id="discountForm" class="discount-form" novalidate>
+        <div class="form-row">
+          <label for="discountName">Full Name *</label>
+          <input id="discountName" name="discountName" type="text" required placeholder="John Doe">
+        </div>
+        <div class="form-row">
+          <label for="discountEmail">Email Address *</label>
+          <input id="discountEmail" name="discountEmail" type="email" required placeholder="you@example.com">
+        </div>
+        <div class="form-row">
+          <label for="discountPhone">Phone Number *</label>
+          <input id="discountPhone" name="discountPhone" type="tel" required placeholder="(503) 555-1234">
+        </div>
+        <div class="form-row">
+          <label for="discountService">Interested Service</label>
+          <select id="discountService" name="discountService">
+            <option value="">Select a service...</option>
+            <option value="Christmas Light Installation">Christmas Light Installation</option>
+            <option value="Junk Removal">Junk Removal</option>
+            <option value="Window Washing">Window Washing</option>
+            <option value="Roof Cleaning">Roof Cleaning</option>
+          </select>
+        </div>
+        <button type="submit" class="btn primary" style="width:100%">Claim My 5% Discount</button>
+      </form>
+      <p class="modal-footer">We respect your privacy. No spam, ever.</p>
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
+  <!-- Floating call button -->
+  <a class="call-button" href="tel:+15038332245" aria-label="Call NextGen Home Services">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.09 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12 1.05.38 2.07.75 3.03a2 2 0 0 1-.45 2.11L8.91 11.09a16 16 0 0 0 6 6l1.23-1.23a2 2 0 0 1 2.11-.45c.96.37 1.98.63 3.03.75A2 2 0 0 1 22 16.92z" fill="#fff"/>
+    </svg>
+    <span class="visually-hidden">Call NextGen Home Services</span>
+  </a>
+  <!-- Floating reviews tab -->
+  <a class="reviews-button" href="#reviewsPanel" aria-expanded="false" aria-controls="reviewsPanel">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27z" fill="#fff"/>
+    </svg>
+    <span style="font-weight:700">4.7</span>
+    <span style="color:#fff;opacity:.9">(10)</span>
+  </a>
+</body>
+</html>
